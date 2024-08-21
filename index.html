@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myWeb</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <!------------------- Start header ---------------------------->
+    <header>
+      <div class="container">
+        <div class="innerWrap">
+          <div class="logo">
+            <a href="#"><img src="/assets/img/logo.webp" alt="logo" /></a>
+          </div>
+          <nav class="menu">
+            <div class="menuItem">
+              <label for="hbg" id="show-menu"
+                ><i class="fa-solid fa-bars"></i
+              ></label>
+              <input type="checkbox" id="hbg" />
+              <ul id="nav">
+                <label for="hbg"><i class="fa-solid fa-xmark"></i></label>
+                <li><a href="#about">About&#160;Me</a></li>
+                <li><a href="#favorite">Favorite</a></li>
+                <li><a href="#exp">My&#160;Story</a></li>
+                <li><a href="#future">Future</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="search">
+            <input type="checkbox" id="se" />
+            <label id="la1" for="se">
+              <i class="fa-solid fa-magnifying-glass"></i
+            ></label>
+            <form action="https://www.google.com/search?">
+              <label id="la2" for="se"
+                ><i class="fa-solid fa-circle-xmark"></i
+              ></label>
+              <input type="search" name="q" placeholder="Search..." />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!------------------- End header ---------------------------->
+    <!------------------- Start intro ---------------------------->
+    <div class="intro" id="intro">
+      <div class="container">
+        <div class="content">
+          <h1>
+            "Success is not about where you start, <br />but where you end up!"
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!------------------------ Start sectionOne ---------------------->
+    <section id="about" class="sectionOne">
+      <div class="container">
+        <div class="innerWrap">
+          <div class="avatar">
+            <img src="/assets/img/thhh.webp" alt="" />
+          </div>
+          <div class="content">
+            <div class="contentBox">
+              <h2 class="title">About me</h2>
+              <div class="desc">
+                <p><b>Name:</b>&#160;DO THI THUONG</p>
+                <p><b>Birthday:</b>&#160;29/04/2000</p>
+                <p><b>Nationally:</b>&#160;Vietnamese</p>
+                <p><b>Occupation:</b>&#160;Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------- End sectionOne ----------------------->
+
+    <!------------------------- Start sectionTwo ----------------------->
+    <section class="sectionTwo" id="favorite">
+      <div class="container">
+        <div class="innerWrap">
+          <div class="title">Favorite</div>
+          <div class="content">
+            <div class="item">
+              <div class="img img1"></div>
+              <div class="desc">Guitar</div>
+            </div>
+            <div class="item">
+              <div class="img img2"></div>
+              <div class="desc">Sun flower</div>
+            </div>
+            <div class="item">
+              <div class="img img3"></div>
+              <div class="desc">Sleeping</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------- End sectionOTwo ----------------------->
+
+    <!------------------------- Start sectionThree ----------------------->
+    <section class="sectionThree" id="exp">
+      <div class="container">
+        <div class="innerWrap">
+          <div class="title">My Story</div>
+          <div class="content">
+            <input id="str1" type="radio" checked name="str" />
+            <input id="str2" type="radio" name="str" />
+            <input id="str3" type="radio" name="str" />
+            <input id="str4" type="radio" name="str" />
+            <input id="str5" type="radio" name="str" />
+            <input id="str6" type="radio" name="str" />
+
+            <label id="box1" for="str1"
+              ><img src="/assets/img/tokyo.jpg" alt="tokyo" />
+              <p>Tokyo</p></label
+            >
+            <label id="box2" for="str2"
+              ><img src="/assets/img/tuyết1.jpg" alt="akita" />
+              <p>Akita</p></label
+            >
+
+            <label id="box3" for="str3"
+              ><img src="/assets/img/Osaka.jpg" alt="osaka" />
+              <p>Osaka</p></label
+            >
+
+            <label id="box4" for="str4"
+              ><img src="/assets/img/fukuyama.jpg" alt="fukuyama" />
+              <p>Fukuyama</p></label
+            >
+
+            <label id="box5" for="str5"
+              ><img src="/assets/img/hiroshima.jpg" alt="hiroshima" />
+              <p>Hiroshima</p></label
+            >
+            <label id="box6" for="str6"
+              ><img src="/assets/img/okayama.jpg" alt="okayama" />
+              <p>Okayama</p></label
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------- End sectionThree ----------------------->
+
+    <!------------------------- Start sectionFour ----------------------->
+    <section class="sectionFour" id="future">
+      <div class="container">
+        <div class="innerWrap">
+          <div class="title">Future Plan</div>
+          <div class="content">
+            <input type="radio" id="jp" name="plan" checked />
+            <input type="radio" id="vn" name="plan" />
+            <button class="jpbtn"><label for="jp"> Japan </label></button>
+            <button class="vnbtn"><label for="vn"> VietNam </label></button>
+            <div class="jppl">
+              <p>- 2026年に卒業出来るように頑張ります。</p>
+              <p>- 運転免許を取る</p>
+              <p>- 日本で就職できる。</p>
+              <p>- 日本で４０－４５歳まで働く</p>
+            </div>
+            <div class="vnpl">
+              <p>- ベトナムに帰って、パン屋を開く</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------- End sectionFour----------------------->
+
+    <!------------------------- Start footer ----------------------->
+    <footer id="ct">
+      <div class="container">
+        <div class="contact">
+          <div class="school item">
+            <i class="fa-solid fa-school"></i>ITビジネスカレッジ
+          </div>
+          <div class="place item">
+            <i class="fa-solid fa-location-dot"></i
+            >701-4212&#160;岡山県瀬戸内市邑久町
+          </div>
+          <div class="phone item">
+            <i class="fa-solid fa-phone"></i>09080001234
+          </div>
+          <div class="mail item">
+            <i class="fa-regular fa-envelope"></i>ib240007do@setouchicollege.com
+          </div>
+        </div>
+        <div class="social">
+          <div class="fb">
+            <a href="https://www.facebook.com/thuong.do.3726" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+          <div class="ins">
+            <a href="#" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="tik">
+            <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+          <div class="line">
+            <a href="#" target="_blank"><i class="fa-brands fa-line"></i></a>
+          </div>
+        </div>
+        <div class="scroll">
+          <a href="#intro"><i class="fa-solid fa-angles-up"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!------------------------- End footer ----------------------->
+  </body>
+</html>

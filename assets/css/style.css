@@ -1,0 +1,664 @@
+/* --------------Start header--------------------*/
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+header .container {
+  height: auto;
+}
+header .container .innerWrap {
+  height: 13vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bgcolor_one);
+  margin: 0;
+  border-radius: 0;
+}
+header .container .innerWrap .logo {
+  margin-left: 2em;
+  margin-top: 0.5em;
+}
+header .container .innerWrap .logo img {
+  width: 90px;
+}
+header .container .innerWrap .menu {
+  width: 60%;
+}
+header .container .innerWrap .menu ul {
+  width: 100%;
+  display: flex;
+  font-size: 26px;
+}
+header .container .innerWrap .menu ul li {
+  width: calc(100% / 4);
+  text-align: center;
+}
+header .container .innerWrap .menu ul li a:hover {
+  background-color: var(--bgcolor_three);
+}
+/*-------------------------- hambager -----------------*/
+header .container .innerWrap .menu .menuItem i {
+  font-size: 26px;
+  margin-left: 10px;
+}
+header .container .innerWrap .menu .menuItem label {
+  display: none;
+}
+/*-------------------------- hambager -----------------*/
+
+/* ---------------------------search btn ----------------------- */
+
+header .container .innerWrap .search {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 10%;
+}
+header .container .innerWrap .search form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: relative;
+}
+header .container .innerWrap .search #la1 {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-right: 20px;
+}
+header .container .innerWrap .search form #la2 {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 20px;
+}
+header .container .innerWrap .search form input {
+  height: 30px;
+  padding-left: 5px;
+  border-radius: 25px;
+  margin-right: 5px;
+}
+header .container .innerWrap .search form button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 20px;
+}
+header .container .innerWrap .search #se:checked ~ form {
+  display: flex;
+}
+header .container .innerWrap .search #se:checked ~ #la1 {
+  display: none;
+}
+/*------------------------ reponsive -------------------*/
+/*------------------------ Screen 1024x768------------------------ */
+@media screen and (max-width: 1024px) {
+  header .container .innerWrap .search form input {
+    width: 100px;
+  }
+  header .container .innerWrap .menu {
+    width: 55%;
+  }
+  header .container .innerWrap .menu ul {
+    font-size: 21px;
+  }
+}
+
+/*------------------------ Screen 768x1024------------------------ */
+@media screen and (max-width: 768px) {
+  header .container .innerWrap .menu ul {
+    display: none;
+  }
+  header .container .innerWrap .logo {
+    order: 1;
+    width: 70%;
+    text-align: center;
+  }
+  header .container .innerWrap .menu {
+    width: 10%;
+  }
+  header .container .innerWrap .menu .menuItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 0;
+  }
+  header .container .innerWrap .menu .menuItem label {
+    display: block;
+  }
+
+  header .container .innerWrap .menu .menuItem #hbg:checked ~ #nav {
+    display: flex;
+    flex-direction: column;
+    width: 20vh;
+    height: 30vh;
+    justify-content: space-evenly;
+    align-items: start;
+    background-color: var(--bgcolor_two);
+    opacity: 0.8;
+    position: absolute;
+    border-radius: 4px;
+    padding-left: 14px;
+    border: 2px solid var(--bgcolor_one);
+    top: 70px;
+    left: 5px;
+    z-index: 999;
+  }
+
+  header .container .innerWrap .search {
+    order: 2;
+    width: 20%;
+  }
+}
+/*------------------------ Screen 480px------------------------ */
+@media screen and (max-width: 480px) {
+  header .container .innerWrap .logo {
+    display: none;
+  }
+}
+/*----------------------- End header----------------------------- */
+
+/*-------------- -------------Start Intro ---------------------------*/
+.intro .container {
+  background-image: url(/assets/img/bg.webp);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 99;
+}
+.intro .container .content h1 {
+  color: #fff;
+  position: absolute;
+  bottom: 4em;
+  left: 3em;
+}
+/*------------------------ reponsive -------------------*/
+/*------------------------ Screen 1024x768------------------------ */
+@media screen and (max-width: 1024px) {
+  .intro .container .content h1 {
+    font-size: 1.7em;
+  }
+}
+
+/*------------------------ Screen 768x1024------------------------ */
+@media screen and (max-width: 768px) {
+  .intro .container .content h1 {
+    font-size: 1.2em;
+  }
+}
+
+/*------------------------ Screen 480px------------------------ */
+@media screen and (max-width: 480px) {
+  .intro .container .content h1 {
+    font-size: 0.8em;
+    top: 50%;
+  }
+  .intro .container {
+    height: 80vh;
+  }
+}
+/* -------------------------------End intro-------------------------*/
+
+/* ----------------------Start sectionOne----------------------- */
+.sectionOne .container .innerWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionOne .container .innerWrap .avatar {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionOne .container .innerWrap .avatar img {
+  height: 360px;
+  width: 360px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.9);
+
+}
+
+.sectionOne .container .innerWrap .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
+}
+.sectionOne .container .innerWrap .content .contentBox {
+  width: 45vh;
+  padding: 20px 50px;
+  border-radius: 20px;
+  background-color: var(--bgcolor_one);
+}
+/*------------------------ reponsive -------------------*/
+/*------------------------ Screen 1024x768------------------------ */
+@media screen and (max-width: 1024px) {
+  .sectionOne .container .innerWrap .avatar img {
+    height: 280px;
+    width: 280px;
+  }
+  .sectionOne .container .innerWrap .content .contentBox {
+    padding: 20px;
+  }
+}
+/*------------------------ Screen 768x1024------------------------ */
+@media screen and (max-width: 768px) {
+  .sectionOne .container .innerWrap .content .contentBox {
+    width: 35vh;
+  }
+  .sectionOne .container .innerWrap {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .sectionOne .container .innerWrap .avatar {
+    width: 100%;
+  }
+  .sectionOne .container .innerWrap .avatar img {
+    height: 220px;
+    width: 220px;
+  }
+}
+/*------------------------ Screen 480px------------------------ */
+@media screen and (max-width: 480px) {
+  .sectionOne .container .innerWrap .content {
+    font-size: 0.9em;
+  }
+  .sectionOne .container .innerWrap .content .contentBox {
+    width: 30vh;
+  }
+}
+/*------------------------ Screen 300px------------------------ */
+@media screen and (max-width: 300px) {
+  .sectionOne .container {
+    height: 70vh;
+  }
+  .sectionOne .container .innerWrap .avatar img {
+    height: 160px;
+    width: 160px;
+  }
+  .sectionOne .container .innerWrap .content {
+    font-size: 0.7em;
+  }
+  .sectionOne .container .innerWrap .content .contentBox {
+    width: 20vh;
+    line-height: 25px;
+  }
+}
+/*--------------------------- Start sectionTwo----------------------- */
+.sectionTwo .container .innerWrap .title {
+  font-size: 2.3em;
+  font-weight: 700;
+  text-align: center;
+  padding: 50px 0;
+  text-decoration: underline;
+}
+.sectionTwo .container .innerWrap .content {
+  display: flex;
+}
+.sectionTwo .container .innerWrap .content .item {
+  width: calc(100% / 3);
+  height: 400px;
+  padding: 10px 10px;
+  margin: 0 15px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.sectionTwo .container .innerWrap .content .item .img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.sectionTwo .container .innerWrap .content .item .desc {
+  font-size: 1.3em;
+  font-style: italic;
+  text-align: center;
+  padding: 25px 0;
+}
+.sectionTwo .container .innerWrap .content .item .img1 {
+  background: url(/assets/img/guitar.jpg) no-repeat center;
+  background-size: cover;
+}
+.sectionTwo .container .innerWrap .content .item .img2 {
+  background: url(/assets/img/sunfl.jpg) no-repeat center;
+  background-size: cover;
+}
+.sectionTwo .container .innerWrap .content .item .img3 {
+  background: url(/assets/img/sleep.jpg) no-repeat center;
+  background-size: cover;
+}
+/* --------------------------max width 480px --------------------------*/
+
+@media screen and (max-width: 480px) {
+  .sectionTwo .container {
+    height: auto;
+  }
+  .sectionTwo .container .innerWrap .title {
+    font-size: 1.3em;
+  }
+  .sectionTwo .container .innerWrap .content .item {
+    margin-bottom: 20px;
+    width: calc(100% - 30px);
+  }
+  .sectionTwo .container .innerWrap .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*---------------------------- End sectionTwo ------------------------*/
+
+/*--------------------------- Start sectionThree ---------------------*/
+.sectionThree .container .innerWrap .title {
+  font-size: 2.3em;
+  font-weight: 700;
+  text-align: center;
+  padding: 50px 0 30px;
+  text-decoration: underline;
+}
+.sectionThree .container .innerWrap .content {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 2.3em;
+  font-weight: 600;
+}
+.sectionThree .container .innerWrap {
+  position: relative;
+}
+.sectionThree .container .innerWrap label img {
+  width: 10vw;
+  height: 65vh;
+  object-fit: cover;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+}
+.sectionThree .container .innerWrap label p {
+  display: none;
+}
+#str1:checked ~ #box1 img,
+#str2:checked ~ #box2 img,
+#str3:checked ~ #box3 img,
+#str4:checked ~ #box4 img,
+#str5:checked ~ #box5 img,
+#str6:checked ~ #box6 img {
+  width: 30vw;
+  transition: 0.7s ease;
+}
+#str1:checked ~ #box1 p,
+#str2:checked ~ #box2 p,
+#str3:checked ~ #box3 p,
+#str4:checked ~ #box4 p,
+#str5:checked ~ #box5 p,
+#str6:checked ~ #box6 p {
+  display: inline-block;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  text-align: center;
+  width: 90%;
+  height: 45px;
+  background-color: var(--bgcolor_one);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* --------------------------max width 480px --------------------------*/
+
+@media screen and (max-width: 480px) {
+  .sectionThree .container {
+    height: 60vh;
+  }
+  .sectionThree .container .innerWrap .title {
+    font-size: 1.3em;
+  }
+  .sectionThree .container .innerWrap label img {
+    height: 30vh;
+  }
+  .sectionThree .container .innerWrap .content {
+    height: auto;
+  }
+}
+/*----------------------------- End sectionThree ---------------------*/
+
+/*--------------------------- Start sectionFour----------------------- */
+.sectionFour .container {
+  height: 70vh;
+}
+.sectionFour .container .title {
+  font-size: 2.3em;
+  font-weight: 700;
+  text-align: center;
+  padding: 50px 0 40px;
+  text-decoration: underline;
+}
+.sectionFour .container .content button {
+  font-weight: 700;
+  border: 2px solid black;
+}
+.sectionFour .container .content button label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.sectionFour .container .content .jpbtn {
+  margin-left: 20px;
+}
+.sectionFour .container .content #jp:checked ~ .vnpl {
+  display: none;
+}
+.sectionFour .container .content #jp:checked ~ .jpbtn {
+  border-bottom: 2px solid var(--bgcolor_one);
+  border-radius: 5px;
+}
+.sectionFour .container .content #vn:checked ~ .jppl {
+  display: none;
+}
+.sectionFour .container .content #vn:checked ~ .vnbtn {
+  border-bottom: 2px solid var(--bgcolor_one);
+  border-radius: 5px;
+}
+.sectionFour .container .content .jppl,
+.sectionFour .container .content .vnpl {
+  border: 2px solid black;
+  margin: 5px 20px;
+  padding: 10px;
+  height: 200px;
+}
+/* --------------------------max width 480px --------------------------*/
+
+@media screen and (max-width: 480px) {
+  .sectionFour .container .title {
+    font-size: 1.5em;
+  }
+}
+/*---------------------------- End sectionFour------------------------*/
+
+/*--------------------------- Start footer----------------------- */
+footer .container {
+  background-color: var(--bgcolor_one);
+  margin-top: 100px;
+  height: 400px;
+  display: flex;
+  position: relative;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+footer .container::after {
+  content: "";
+  background: url(/assets/Img/footer\ gau.png) no-repeat;
+  position: absolute;
+  width: 145px;
+  height: 65px;
+  bottom: 490px;
+  right: 20%;
+}
+footer .container::before {
+  content: "";
+  background: url(/assets/Img/bf.png) no-repeat;
+  width: 320px;
+  height: 370px;
+  position: absolute;
+  bottom: 85%;
+  left: 5%;
+}
+footer .container .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+footer .container .contact .item {
+  display: flex;
+  align-items: center;
+  border-right: 3px solid black;
+}
+footer .container .contact i {
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 0 10%;
+}
+
+footer .container .social {
+  width: 50%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container .social i {
+  font-size: 45px;
+}
+footer .container .social .fb i {
+  color: blue;
+}
+footer .container .social .ins i {
+  font-size: 40px;
+  background-image: linear-gradient(45deg, #ee823d, #b838a9, #604ae7, #eb5c46);
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+footer .container .social .tik i {
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+.social .line i {
+  color: #06c152;
+}
+footer .scroll a {
+  transition: 5s ease-in;
+}
+footer .scroll a i {
+  font-size: 25px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #dad1d1;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2%;
+  bottom: 15%;
+  z-index: 10;
+}
+/*------------------------------------------------------ reponsive ------------------------------------*/
+
+/* --------------------------max width 1024px --------------------------*/
+
+@media screen and (max-width: 1024px) {
+  footer .container .contact i {
+    padding-left: 20px;
+  }
+  footer .container .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8em;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  footer .container .contact .item {
+    border-right: none;
+  }
+}
+
+/* --------------------------max width 480px --------------------------*/
+
+@media screen and (max-width: 480px) {
+  footer .container::before {
+    display: none;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .container .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8em;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  footer .container .contact i {
+    padding-left: 5px;
+  }
+  footer .container .contact .item {
+    border-right: none;
+  }
+  footer .container .social i {
+    font-size: 30px;
+  }
+  footer .container .social .ins i {
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+  }
+  footer .container .social .tik i {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+}
+
+/*---------------------------- End footer ------------------------*/
